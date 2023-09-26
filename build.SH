@@ -10,4 +10,6 @@ export CXX=$TOLCHAIN/bin/$TARGEt$API-clang++
 export LD=$TOLCHAIN/bin/ld
 export RANLIB=$TOLCHAIN/bin/llvm-ranlib
 export STRIP=$TOLCHAIN/bin/llvm-strip
+export CPPFLAGS=-fPIC
+export CFLAGS=-fPIC
 ./configure --host=aarch64-linux-android  --enable-cxx  --prefix=/home/ii/test2
